@@ -1,0 +1,2 @@
+[master]
+dvm ansible_connection=docker 

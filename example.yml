@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+  - shell: echo "Hello from host=`hostname`"
+  - shell: hostname
+  - shell: id

@@ -1,0 +1,12 @@
+### THIS file is required only if you change connector from dokcer to ssh
+### One will also need to create the dvm_id* set of keys and update the authorized keys inside accordingly
+Host dvm*
+  User root
+  Port 23222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile ./dvm_id
+  IdentitiesOnly yes
+  LogLevel FATAL
+
